@@ -1,0 +1,11 @@
+codigo = int(input("Digite o codigo do produto: "))
+nome = str(input("Digite o nome do produto: "))
+quantidade = int(input("Digite a quantidade: "))
+valorUni = float(input("Digite o valor do item: "))
+valorTotal = valorUni * quantidade
+print("---Compras---")
+print("ID: {}".format(codigo))
+print("Nome: {}".format(nome))
+print("Quantidade: {}".format(quantidade))
+print("Valor do item R${}".format(valorUni))
+print("Valor total da compra R${}".format(valorTotal))
