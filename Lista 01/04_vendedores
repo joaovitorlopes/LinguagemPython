@@ -1,0 +1,9 @@
+valorTotal = float(input("Insira o valor total: R$"))
+desconto10 = valorTotal - (valorTotal*0.10)
+print("O valor da venda com 10% de desconto é: R${}".format(round(desconto10,2)))
+parcelas = valorTotal/3
+print("O valor de cada parcela em 3x é: R${}".format(round(parcelas,2)))
+comissao = (desconto10 * 5 / 100)
+print("Comissao do vendedor no caso seja avista: R${}".format(round(comissao,2)))
+comissaoParce = (valorTotal* 5 / 100)
+print("Comissao do vendedor no caso seja parcelada: R${}".format(round(comissaoParce,2)))
