@@ -1,0 +1,6 @@
+c = float(input("Insira o comprimento: "))
+l = float(input("Insira a largura: "))
+area = c * l
+p = float(input("Insira o preço do metro da tela: "))
+valor = area * p
+print("O custo para cercar o terreno é: {}R$".format(round(valor,2)))
