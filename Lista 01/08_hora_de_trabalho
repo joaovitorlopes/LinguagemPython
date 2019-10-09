@@ -1,0 +1,4 @@
+valorHora = float(input("Insira o valor da hora de trabalho: "))
+horas = float(input("Insira o número de horas trabalhadas: "))
+valorPago = valorHora * horas + (valorHora*horas*10/100)
+print("O valor pago ao funcionario que trabalhou {} Horas, é: R${}".format(horas,round(valorPago,2)))
