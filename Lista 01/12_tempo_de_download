@@ -1,0 +1,4 @@
+tamanho = float(input("Informe o tamanho do download em MB: "))
+velocidade = float(input("Informe a velocidade do link em Mbps"))
+tempo = ((tamanho*8)/velocidade)/60
+print(f"Para baixar um arquivo de {tamanho}MB, em um link de velocidade de {velocidade}Mbps é necessário {round(tempo,2)} minutos")
