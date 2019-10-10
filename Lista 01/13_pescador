@@ -1,0 +1,9 @@
+peso = float(input("Insira o peso do peixe (KG):"))
+if peso > 50:
+    acima = peso - 50
+    multa = acima * 4.0
+    print(f"O peixe tem {acima}KG acima de 50KG, portanto deve-se pagar uma multa de R${multa}, tendo o peso de {peso}KG")
+elif peso == 50:
+    print("O peixe possui 50KG")
+else:
+    print("Peixe abaixo de 50KG")
