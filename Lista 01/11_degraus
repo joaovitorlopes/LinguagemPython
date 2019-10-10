@@ -1,0 +1,5 @@
+from math import ceil
+degrau = float(input("Insira a altura de cada degrau: "))
+escada = float(input("Insira a altura da escada: "))
+quantidade = escada / degrau
+print(f"Para uma escada de {escada}m, precisa-se de {ceil(quantidade)} degrais")
