@@ -1,0 +1,19 @@
+import math
+area = float(input("Insira a àrea a ser pintada em m²: "))
+lata = 0
+galao = 0
+litros = area / 6
+x = math.ceil(litros / 18)
+y = math.ceil(litros / 3.6)
+print(f"Precisa-se de {math.ceil(litros)}L")
+print(f"Latas de 18L: {x}, custando R${x*80}")
+print(f"Galões de 3.6L: {y}, custando R${y*25}")
+litros = math.ceil(litros + litros * 0.1)
+while litros > 0:
+    if litros > 18:
+        litros = litros - 18
+        lata = lata + 1
+    else:
+        litros = litros - 3.6
+        galao = galao + 1
+print(f"Latas de 18L: {lata}, galões de 3.6L: {galao}, custando R${galao *25 + lata *80}")
