@@ -1,0 +1,8 @@
+print("---EM FOR---")
+for c in range(1, 100+1):
+    print(c)
+print("---EM WHILE---")
+j = 1
+while j <= 100:
+    print(j)
+    j = j + 1
