@@ -1,0 +1,6 @@
+dias = {1: 'Domingo', 2: 'Segunda', 3: 'Terça', 4: 'Quarta', 5: 'Quarta', 6: 'Sexta', 7: 'Sábado'}
+num = int(input('Insira o número do dia: '))
+if num > 7 or num < 1:
+    print('Valor inválido')
+else:
+    print(dias[num])
