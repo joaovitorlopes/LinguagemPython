@@ -1,0 +1,9 @@
+soma = 0
+count = 0
+idade = int(input())
+while idade > 0:
+    soma = soma + idade
+    count = count + 1
+    idade = int(input())
+media = soma / count
+print(f"Idade média é {round(media,2)} anos")
