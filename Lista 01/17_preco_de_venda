@@ -1,0 +1,5 @@
+preco = float(input("Insira o valor de custo do produto: "))
+lucro = 28/100
+imposto = 25/100
+precofinal = preco + (preco*lucro) + (preco*imposto)
+print(f"O produto tem o seu preço final de R${round(precofinal,2)}")
