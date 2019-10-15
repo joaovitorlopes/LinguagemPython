@@ -1,0 +1,5 @@
+horas = int(input("Insira a hora: "))
+minutos = int(input("Insira os minutos"))
+segundos = int(input("Insira os segundso"))
+segundosFin = segundos + (horas*3600) + (minutos * 60)
+print(f"{horas}:{minutos}:{segundos} em segundos é igual à {segundosFin} segundos")
