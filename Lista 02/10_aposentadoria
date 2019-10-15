@@ -1,0 +1,11 @@
+idade = int(input("Insira sua idade: "))
+print("---INSIRA SEU SEXO---")
+print("1 - Masculino")
+print("2 - Feminino")
+sexo = int(input())
+if sexo == 2 and idade >= 60:
+    print("Você, mulher, pode se aposentar!")
+elif sexo == 1 and idade >= 65:
+    print("Voce, homem, pode se aposentar!")
+else:
+    print("Voce ainda tem que contribuir!")
