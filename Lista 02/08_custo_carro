@@ -1,0 +1,12 @@
+custo = float(input("Insira o custo de fabrica: R$"))
+if custo <= 12000.0:
+    valor = custo + (custo*5/100)
+    print(f"O valor que o cliente irá pagar é: R${valor}")
+elif custo > 12000.0 and custo <= 25000.0:
+    valor = custo + (custo*10/100) + (custo*15/100)
+    print(f"O valor que o cliente irá pagar é: R${valor}")
+elif custo > 25000.0:
+    valor = custo + (custo*15/100) + (custo*20/100)
+    print(f"O valor que o cliente irá pagar é: R${valor}")
+else:
+    print("Entrada inválida")
