@@ -1,0 +1,39 @@
+num1 = int(input("Insira um número:"))
+num2 = int(input("Insira outro número:"))
+print("-----------OPERAÇÕES-----------")
+print("Insira 1 para adição(+)")
+print("Insira 2 para subtração (-)")
+print("Insira 3 para divisão (/)")
+print("Insira 4 para multiplicação (*)")
+print("-----------OPERAÇÕES-----------")
+resposta = int(input("Operação desejada: "))
+resultado = 0
+if resposta == 1:
+    resultado = num1 + num2
+    print(f"O resultado é {resultado}")
+elif resposta == 2:
+    resultado = num1 - num2
+    print(f"O resultado é {resultado}")
+elif resposta == 3:
+    resultado = num1 / num2
+    print(f"O resultado é {resultado}")
+elif resposta == 4:
+    resultado = num1 * num2
+    print(f"O resultado é {resultado}")
+else:
+    print("Entrada invaliada")
+print("---Impar ou par---")
+if resultado %2 == 0:
+    print(f"{resultado} é par")
+else:
+    print(f"{resultado} é impar")
+print("---Positivo ou negativo---")
+if resultado > 0:
+    print(f"{resultado} é positivo")
+else:
+    print(f"{resultado} é negativo")
+print("---Inteiro ou decimal---")
+if type(resultado) == int:
+    print(f"{resultado} é um inteiro")
+else:
+    print(f"{resultado} é um decimal")
