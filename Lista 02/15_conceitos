@@ -1,0 +1,13 @@
+nota = int(input("Insira a sua nota: "))
+if nota == 5:
+    print("Você tirou A")
+elif nota == 4:
+    print("Você tirou B")
+elif nota == 3:
+    print("Você tirou C")
+elif nota == 2:
+    print("Você tirou D")
+elif nota == 1:
+    print("Você tirou E")
+else:
+    print("Entrada invalida!")
