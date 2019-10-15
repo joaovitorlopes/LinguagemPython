@@ -1,0 +1,8 @@
+valor1 = float(input("Insira o valor gasto do cliente 1 em R$"))
+valor2 = float(input("Insira o valor gasto do cliente 2 em R$"))
+valor3 = float(input("Insira o valor gasto do cliente 3 em R$"))
+valor4 = float(input("Insira o valor gasto do cliente 4 em R$"))
+valor5 = float(input("Insira o valor gasto do cliente 5 em R$"))
+medio = (valor1+valor2+valor3+valor4+valor5)/5
+print(f"O valor  da compra média efetuada é {medio}")
+
