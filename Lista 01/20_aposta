@@ -1,0 +1,11 @@
+apostador1 = float(input("Valor investido do primeiro: "))
+apostador2 = float(input("Valor investido do segundo: "))
+apostador3 = float(input("Valor investido do terceiro: "))
+premio = float(input("Valor do premio: "))
+valorTotal = apostador1 + apostador2 + apostador3
+valorApostador1 = premio * apostador1/valorTotal
+valorApostador2 = premio * apostador2/valorTotal
+valorApostador3 = premio * apostador3/valorTotal
+print(f"O apostador 1 investiu R${apostador1} e ganhou R${round(valorApostador1,2)}")
+print(f"O apostador 2 investiu R${apostador2} e ganhou R${round(valorApostador2,2)}")
+print(f"O apostador 3 investiu R${apostador3} e ganhou R${round(valorApostador3,2)}")
