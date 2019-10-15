@@ -1,0 +1,16 @@
+base = 0.0
+altura = 0.0
+area = 0.0
+while base == 0 or altura == 0:
+    base = float(input("Insira a base "))
+    altura = float(input("Insira a altura "))
+    if  base <= 0:
+        print("ENTRADA INVALIDA!")
+        base = float(input("Insira a base "))
+    elif altura <= 0:
+        print("ENTRADA INVALIDA!")
+        altura = float(input("Insira a altura "))
+    else:
+        print("Entrada validas!")
+area = (base * altura)/2;
+print(f"Área do triângulo: {round(area,2)}")
