@@ -1,0 +1,5 @@
+capacidade = float(input("Insira a capacidade do tanque: "))
+litros = float(input("Insira a quantidade de Litros abastecidos: "))
+quilometragem = float(input("Insira a quilometragem percorrida do ultimo abastecimento: "))
+consumo = quilometragem/litros
+print(f"O seu tanque possui capacidade de {capacidade}L, foi abastecido {litros}L e o consumo médio é {round(consumo,2)}km/l")
