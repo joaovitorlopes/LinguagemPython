@@ -1,0 +1,9 @@
+valor = float(input("Insira o valor total da compra: "))
+avista = valor - (valor*5/100)
+print(f"Pagamento a vista 5%: R${avista}")
+parcelas = valor/3
+print(f"Parcelado em 3x sem juros: 3 parcelas de R${round(parcelas,2)}")
+parcelas5 = (valor + (valor*2/100))/5
+print(f"Parcelado em 5x com juros de 2%: 5 parcelas de R${round(parcelas5,2)}")
+parcelas10 = (valor + (valor*8/100))/10
+print(f"Parcelado em 10x com juros de 8%: 10 parcelas de R${round(parcelas10,2)}")
