@@ -1,0 +1,24 @@
+def metodo_1(valor):
+    valor_total = valor
+    notas100 = valor // 100
+    valor -= notas100 * 100
+    notas50 = valor // 50
+    valor -= notas50 * 50
+    notas10 = valor // 10
+    valor -= notas10 * 10
+    notas5 = valor // 5
+    valor -= notas5 * 5
+    print_notas(valor_total, valor, notas5, notas10, notas50, notas100)
+
+def print_notas(total, notas1, notas5, notas10, notas50, notas100):
+    template = "R$ {:>3}: {:>3} notas"
+    print("- Valor do saque: R$ " + str(total))
+    print(template.format("100", notas100))
+    print(template.format("50", notas50))
+    print(template.format("10", notas10))
+    print(template.format("5", notas5))
+    print(template.format("1", notas1))
+    print()
+
+valor = int(input('Quanto deseja sacar? '))
+resposta1 = metodo_1(valor)
