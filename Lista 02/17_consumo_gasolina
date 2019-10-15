@@ -1,0 +1,11 @@
+distancia = float(input("Insira a distancia em KM: "))
+quantidade = float(input("Quantidade de gasolina gasta: "))
+consumo = distancia/quantidade
+if consumo < 8:
+    print("Venda o carro!")
+elif consumo >= 8 and consumo <= 14:
+    print("Economico!")
+elif consumo > 14:
+    print("Super Economico!")
+else:
+    print("Invalido!")
