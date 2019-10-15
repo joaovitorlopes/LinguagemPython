@@ -1,0 +1,5 @@
+num = float(input('Insira um número: '))
+if num == round(num):
+    print("Inteiro")
+else:
+    print("Decimal")
